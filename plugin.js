@@ -9,7 +9,7 @@
 	CKEDITOR.plugins.add( 'linkballoon', {
 		requires: 'balloontoolbar,link,openlink',
 
-		afterInit: function( editor ) {
+		init: function( editor ) {
 			editor.ui.addButton( 'OpenLink', {
 				command: 'openLink',
 				toolbar: 'links,50',
